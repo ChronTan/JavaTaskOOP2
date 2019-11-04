@@ -85,12 +85,45 @@ public class MyComplex {
     }
 
     public MyComplex add(MyComplex right){
+        right.real=this.real+this.real;
+        right.image=this.image+this.image;
+        setValue(right.real, right.image);
         return right;
     }
+    public MyComplex subtract(MyComplex right){
+        right.real=this.real-this.real;
+        right.image=this.image-this.image;
+        setValue(right.real, right.image);
+        return right;
+    }
+    public MyComplex multiply(MyComplex right){
+        right.real=this.real*this.real;
+        right.image=this.image*this.image;
+        setValue(right.real, right.image);
+        return right;
+    }
+//    public MyComplex divide(MyComplex right){
+//        right.real=this.real*this.real;
+//        right.image=this.image*this.image;
+//        setValue(right.real, right.image);
+//        return right;
+//    }
     public MyComplex addNew(MyComplex right){
-        right=new MyComplex(5.0,3.0);
+        right.real=this.real+right.real;
+        right.image=this.image+right.image;
+        setValue(right.real, right.image);
         return right;
     }
+    public MyComplex subtrack(MyComplex right){
+        right.real=this.real-right.real;
+        right.image=this.image-right.image;
+        setValue(right.real, right.image);
+        return right;
+    }
+
+//    public MyComplex conjugate(){                              
+//        return this.add();
+//    }
 
     public static void main(String[] args) {
 
