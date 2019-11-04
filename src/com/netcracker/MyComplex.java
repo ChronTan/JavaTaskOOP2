@@ -121,7 +121,7 @@ public class MyComplex {
         return right;
     }
 
-//    public MyComplex conjugate(){                              
+//    public MyComplex conjugate(){
 //        return this.add();
 //    }
 
